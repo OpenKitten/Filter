@@ -3,10 +3,7 @@ import XCTest
 
 class FilterTests: XCTestCase {
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(Filter().text, "Hello, World!")
+        let string = parse([UInt8]("age == 4 || age == 5 && age < 10 && age > 2".utf8))
     }
 
 
